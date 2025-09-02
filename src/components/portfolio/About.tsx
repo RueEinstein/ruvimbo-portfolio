@@ -38,25 +38,30 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Main About Content */}
           <div className="space-y-6 slide-up">
-            <div className="prose prose-lg max-w-none">
+            <div className="prose prose-lg max-w-none space-y-6">
               <p className="text-foreground leading-relaxed">
-                I am <strong>Ruvimbo Chibaya</strong>, a dedicated Information Systems student at Great Zimbabwe University, 
-                currently preparing to embark on my Level 3.1 Work-Related Learning Attachment. My academic journey in 
-                <strong> Management Information Systems</strong> has equipped me with a solid foundation in both technical 
-                and business aspects of information technology.
+                Hello! I'm <strong>Ruvimbo Chibaya</strong>, a passionate Information Systems student at Great Zimbabwe University. 
+                Currently in my academic journey pursuing a <strong>BSc in Management Information Systems</strong>, I'm preparing 
+                to take the next exciting step into the professional world through my Level 3.1 Work-Related Learning Attachment.
               </p>
               
               <p className="text-foreground leading-relaxed">
-                I am passionate about leveraging technology to solve business problems and streamline processes. 
-                My studies have given me insights into systems analysis, database management, programming, and 
-                project management. I am eager to apply these skills in a professional environment and contribute 
-                meaningfully to an organization while gaining valuable industry experience.
+                My academic foundation spans both the technical and business dimensions of information technology. Through rigorous 
+                coursework and hands-on projects, I've developed expertise in systems analysis, database management, programming 
+                methodologies, and strategic project management. What truly drives me is the opportunity to bridge the gap between 
+                complex technical solutions and real-world business challenges.
               </p>
 
               <p className="text-foreground leading-relaxed">
-                I am actively seeking a work-related learning attachment where I can contribute my theoretical knowledge, 
-                learn from experienced professionals, and develop practical skills that will prepare me for a successful 
-                career in ICT. I am committed to continuous learning and professional growth.
+                I'm actively seeking a work-related learning attachment where I can contribute fresh perspectives while learning 
+                from industry professionals. My goal is to apply my theoretical knowledge in a dynamic professional environment, 
+                gaining invaluable practical experience that will shape my career in ICT. I believe in the power of continuous 
+                learning and am committed to growing both personally and professionally.
+              </p>
+
+              <p className="text-foreground leading-relaxed">
+                I'm excited about the possibility of joining an innovative team where I can make meaningful contributions while 
+                developing the skills needed for a successful career in information and communication technology.
               </p>
             </div>
           </div>
@@ -66,11 +71,9 @@ const About = () => {
             {highlights.map((highlight, index) => (
               <Card key={index} className="hover-lift border-border bg-card shadow-md">
                 <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <highlight.icon className="h-6 w-6 text-primary" />
-                      </div>
+                  <div className="flex flex-col items-center text-center space-y-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <highlight.icon className="h-6 w-6 text-primary" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">
