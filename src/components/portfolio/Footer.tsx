@@ -57,8 +57,8 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4 text-secondary-foreground">Get In Touch</h4>
               <div className="space-y-2 text-sm text-secondary-foreground/80">
-                <p>ruvimbo.chibaya@student.uz.ac.zw</p>
-                <p>+263 77 123 4567</p>
+                <p>ruvimbochibaya65@gmail.com</p>
+                <p>+263 77 968 7784</p>
                 <p>Masvingo, Zimbabwe</p>
                 <div className="flex justify-center md:justify-start space-x-4 mt-4">
                   <Button

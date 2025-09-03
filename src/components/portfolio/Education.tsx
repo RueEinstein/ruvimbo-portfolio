@@ -8,8 +8,8 @@ const Education = () => {
     university: "Great Zimbabwe University",
     location: "Masvingo, Zimbabwe",
     duration: "2022 - Present",
-    currentLevel: "Level 2.2 (Preparing for Level 3.1 Work-Related Learning Attachment)",
-    expectedGraduation: "2025",
+    currentLevel: "Level 3.1 (Preparing for Level 3.1 Work-Related Learning Attachment)",
+    expectedGraduation: "2026",
     status: "In Progress"
   };
 
