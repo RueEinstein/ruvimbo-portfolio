@@ -21,8 +21,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "ruvimbo.chibaya@student.uz.ac.zw",
-      href: "mailto:ruvimbo.chibaya@student.uz.ac.zw",
+      value: "ruvimbochibaya65@gmail.com",
+      href: "mailto:ruvimbochibaya65@gmail.com",
       color: "primary"
     },
     {
