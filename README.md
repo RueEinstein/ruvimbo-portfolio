@@ -22,10 +22,10 @@ Want to explore or customize my portfolio? Follow these steps to copy/clone it a
 
 ```bash
 # 1️⃣ Clone the repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/RueEinstein/ruvimbo-portfolio.git
 
 # 2️⃣ Move into the project folder
-cd <YOUR_PROJECT_NAME>
+cd ruvimbo-portfolio
 
 # 3️⃣ Install all required packages
 npm install
@@ -33,3 +33,6 @@ npm install
 # 4️⃣ Launch the development server
 npm run dev
 ```
+## 🎉 Enjoy Coding!
+
+Dive in, experiment, and let your creativity guide you. Happy coding!
