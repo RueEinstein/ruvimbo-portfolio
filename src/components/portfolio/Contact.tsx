@@ -28,8 +28,8 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+263 77 968 7784",
-      href: "tel:+263779687784",
+      value: ["+263 77 968 7784", "+263 718 046 563"],
+      href: ["tel:+263779687784", "tel:+263718046563"],
       color: "secondary"
     },
     {
@@ -79,6 +79,20 @@ const Contact = () => {
     }, 2000);
   };
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/ruvimbo_chabaya_cv.pdf';
+    link.download = 'Ruvimbo_Chibaya_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    toast({
+      title: 'Download Successful!',
+      description: 'Ruvimbo Chibaya CV has been downloaded.',
+      duration: 3000 // show for 3 seconds
+    });
+  };
+
   const getIconColorClasses = (color: string) => {
     switch (color) {
       case 'primary':
@@ -125,13 +139,25 @@ const Contact = () => {
                       </div>
                       <div className="flex-1">
                         <p className="text-sm font-medium text-muted-foreground">{info.label}</p>
-                        <a
-                          href={info.href}
-                          className="text-foreground hover:text-primary transition-colors"
-                          onClick={info.href === '#' ? (e) => e.preventDefault() : undefined}
-                        >
-                          {info.value}
-                        </a>
+                        {Array.isArray(info.value) ? (
+                          info.value.map((phone, i) => (
+                            <a
+                              key={phone}
+                              href={Array.isArray(info.href) ? info.href[i] : info.href}
+                              className="text-foreground hover:text-primary transition-colors"
+                            >
+                              {phone}{i === 0 ? ' | ' : ''}
+                            </a>
+                          ))
+                        ) : (
+                          <a
+                            href={typeof info.href === 'string' ? info.href : info.href[0]}
+                            className="text-foreground hover:text-primary transition-colors"
+                            onClick={info.href === '#' ? (e) => e.preventDefault() : undefined}
+                          >
+                            {info.value}
+                          </a>
+                        )}
                       </div>
                     </div>
                   </CardContent>
@@ -155,7 +181,7 @@ const Contact = () => {
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => alert('CV download would start here')}
+                  onClick={handleDownloadCV}
                   className="hover-lift"
                 >
                   <Send className="h-4 w-4 mr-2" />

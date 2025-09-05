@@ -1,14 +1,24 @@
 import { ArrowDown, Download, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useToast } from '@/hooks/use-toast';
 
 const Hero = () => {
+  const { toast } = useToast();
+
   const handleDownloadCV = () => {
-    // Create a placeholder CV download
+    // Download the CV from the public folder
     const link = document.createElement('a');
-    link.href = '#';
+    link.href = '/ruvimbo_chabaya_cv.pdf';
     link.download = 'Ruvimbo_Chibaya_CV.pdf';
-    // For now, just show an alert - in a real scenario, this would download the actual CV
-    alert('CV download functionality would be implemented here');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    // Show notification of successful download
+    toast({
+      title: 'Download Successful!',
+      description: 'Ruvimbo Chibaya CV has been downloaded.',
+      duration: 3000, // show for 3 seconds
+    });
   };
 
   const scrollToContact = () => {
