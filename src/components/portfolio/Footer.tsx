@@ -64,7 +64,7 @@ const Footer = () => {
                   <Button
                     variant="ghost"
                     size="sm"
-                    onClick={() => alert('LinkedIn profile would open here')}
+                    onClick={() => window.open('https://linkedin.com/in/ruvimbo-chibaya', '_blank')}
                     className="text-secondary-foreground/80 hover:text-secondary-foreground hover:bg-secondary-foreground/10"
                   >
                     LinkedIn
@@ -72,7 +72,7 @@ const Footer = () => {
                   <Button
                     variant="ghost"
                     size="sm"
-                    onClick={() => alert('GitHub profile would open here')}
+                    onClick={() => window.open('https://github.com/RueEinstein', '_blank')}
                     className="text-secondary-foreground/80 hover:text-secondary-foreground hover:bg-secondary-foreground/10"
                   >
                     GitHub
