@@ -187,7 +187,7 @@ const Contact = () => {
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => alert('GitHub profile would open here')}
+                  onClick={() => window.open('https://github.com/RueEinstein', '_blank')}
                   className="hover-lift"
                 >
                   <Github className="h-4 w-4 mr-2" />
