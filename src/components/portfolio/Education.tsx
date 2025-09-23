@@ -4,12 +4,12 @@ import { GraduationCap, Calendar, MapPin, Award, BookOpen, Target } from 'lucide
 
 const Education = () => {
   const educationDetails = {
-    degree: "Bachelor of Science in Management Information Systems",
+    degree: "Bachelor of Commerce Honours Degree [Information Systems]",
     university: "Great Zimbabwe University",
     location: "Masvingo, Zimbabwe",
-    duration: "2022 - Present",
+    duration: "2023 - Present",
     currentLevel: "Level 3.1 (Preparing for Level 3.1 Work-Related Learning Attachment)",
-    expectedGraduation: "2026",
+    expectedGraduation: "2027",
     status: "In Progress"
   };
 
