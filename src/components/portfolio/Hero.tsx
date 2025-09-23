@@ -55,7 +55,7 @@ const Hero = () => {
               Ruvimbo Chibaya
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-secondary">
-              BSc Management Information Systems Student
+              Bachelor of Commerce Honours Degree [Information Systems] Student
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               Aspiring ICT Professional | Future Systems Analyst | Ready for Work-Related Learning Attachment
