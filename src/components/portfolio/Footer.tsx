@@ -20,7 +20,7 @@ const Footer = () => {
                 Ruvimbo Chibaya
               </h3>
               <p className="text-sm text-secondary-foreground/80 leading-relaxed">
-                BSc Management Information Systems student seeking work-related learning attachment opportunities. 
+                BSc Commerce Honours [Information Systems] student seeking work-related learning attachment opportunities. 
                 Ready to contribute and learn in a professional ICT environment.
               </p>
             </div>
