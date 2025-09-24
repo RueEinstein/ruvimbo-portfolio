@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "Academic Excellence",
-      description: "Currently pursuing BSc Management Information Systems with strong academic performance"
+      description: "Currently pursuing Bachelor of Commerce Honours Degree [Information Systems] with strong academic performance"
     },
     {
       icon: Target,
@@ -41,7 +41,7 @@ const About = () => {
             <div className="prose prose-lg max-w-none space-y-6">
               <p className="text-foreground leading-relaxed">
                 Hello! I'm <strong>Ruvimbo Chibaya</strong>, a passionate Information Systems student at Great Zimbabwe University. 
-                Currently in my academic journey pursuing a <strong>BSc in Management Information Systems</strong>, I'm preparing 
+                Currently in my academic journey pursuing a <strong>BSc of Commerce Honours Degree [Information Systems]</strong>, I'm preparing 
                 to take the next exciting step into the professional world through my Level 3.1 Work-Related Learning Attachment.
               </p>
               
